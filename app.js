@@ -29,4 +29,4 @@ function clickHandler() {
         .catch(errorHandler)
 };
 
-btntranslate.addEventListener("click", clickEventHandler)
+btntranslate.addEventListener("click", clickHandler)
