@@ -17,7 +17,7 @@ function errorHandler(error) {
 
 
 function clickHandler() {
-    var inputText = txtInput.value; // taking input
+    var inputText = txtinput.value; // taking input
 
     // calling server for processing
     fetch(getTranslationURL(inputText))
