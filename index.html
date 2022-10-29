@@ -14,7 +14,7 @@
             margin: 1rem;
             padding: 1rem;
         }
-        
+
         #output {
             border: 1px solid black;
             height: 10vh;
@@ -22,17 +22,107 @@
             margin: 1rem;
             padding: 1rem;
         }
+
+        :root {
+            --primary: #a855f7;
+            --black: #333333;
+            --width-break: 600px;
+
+        }
+
+        nav {
+
+            background-color: var(--primary);
+            text-align: center;
+            display: block;
+            margin: 0px;
+
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Kalam', cursive;
+            color: #333333;
+        }
+
+        main {
+            margin: auto;
+            padding: 1rem;
+            max-width: var(--width-break);
+        }
+        .footer {
+    background-color: var(--primary);
+    padding: 2rem 1rem;
+    text-align: center;
+    color: white;
+    border-top-right-radius: 1rem;
+    
+}
+
+.footer.link {
+    color: white;
+}
+
+.footer ul {
+    padding-inline-start: 0px;
+    }
+
+.list-item-inline {
+    display: inline;
+    padding: 0rem 0.5rem;
+}
+
+.list-item-inline .link .image {
+    max-width: 20px;
+    display: inline-block;
+    margin: auto;
+}
     </style>
 
 </head>
 
 <body>
-    <h1>talk banannaaa</h1>
-    <textarea id="txt-input" placeholder="put your sentence in English here and we will convert it to banana"></textarea>
-    <button id="btn-translate">Translate</button>
+    <nav>
+        <div style="font-size: 2rem; padding: 1rem;">Pirate talk</div>
+    </nav>
+    <main>
+        <textarea id="txt-input"
+            placeholder="put your sentence in English here and we will convert it to banana"></textarea>
+        <button id="btn-translate">Translate</button>
 
-    <div style="font-size: larger;"> Output will come here 👇</div>
-    <div id="output"></div>
+        <div style="font-size: larger; padding: 1rem;"> Output will come here 👇</div>
+        <div id="output"></div>
+    </main>
+    <footer class="footer">
+        <div class="footer-header">Connect with me on social media</div>
+        <ul class="social-links list-non-bullet">
+            <li class="list-item-inline">
+                <a class="link" href="https://github.com/nishanth3012000">
+                    <img class="image" src="./images/github.svg" alt="Github">
+                </a>
+
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://www.instagram.com/_nishanth.3_/">
+                    <img class="image" src="./images/instagram.svg" alt="Instagram">
+                </a>
+
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://www.linkedin.com/in/nishanth-bharath-g-00996a231/">
+                    <img class="image" src="./images/linkedin.svg" alt="Linkedin">
+                </a>
+
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://twitter.com/BharathNishanth">
+                    <img class="image" src="./images/twitter.svg" alt="Twitter">
+                </a>
+
+            </li>
+
+        </ul>
+    </footer>
 
     <script src="./app.js" type="text/javascript"></script>
 </body>
