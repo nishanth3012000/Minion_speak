@@ -9,7 +9,7 @@
     <style>
         textarea {
             width: 80%;
-            height: 10vh;
+            height: 15vh;
             display: block;
             margin: 1rem;
             padding: 1rem;
@@ -54,13 +54,18 @@
     background-color: var(--primary);
     padding: 2rem 1rem;
     text-align: center;
-    color: white;
+    color: var(--black);
     border-top-right-radius: 1rem;
     
 }
-
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+}
 .footer.link {
-    color: white;
+    color: var(--black);
+    text-decoration: none;
 }
 
 .footer ul {
@@ -87,14 +92,14 @@
     </nav>
     <main>
         <textarea id="txt-input"
-            placeholder="put your sentence in English here and we will convert it to banana"></textarea>
+            placeholder="Type your sentence in English here and we will convert it to banana"></textarea>
         <button id="btn-translate">Translate</button>
 
         <div style="font-size: larger; padding: 1rem;"> Output will come here 👇</div>
         <div id="output"></div>
     </main>
     <footer class="footer">
-        <div class="footer-header">Connect with me on social media</div>
+        <div class="footer-header">Made by nishanth</div>
         <ul class="social-links list-non-bullet">
             <li class="list-item-inline">
                 <a class="link" href="https://github.com/nishanth3012000">
